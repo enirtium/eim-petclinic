@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+
+  postgres-db:
+    image: postgres:9.5
+    container_name: pgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "p0stgr@s"
+      POSTGRES_DB:       "eagle_eye_local"
+    volumes:
+      - ./src/main/resources/db/postgres/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./src/main/resources/db/postgres/data.sql:/docker-entrypoint-initdb.d/2-data.sql
+    network_mode: bridge
+
+
+
+

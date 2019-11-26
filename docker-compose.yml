@@ -1,0 +1,29 @@
+version: "2"
+
+services:
+  eim-petstore:
+    build: .
+    image: eim-petstore:1.0
+    container_name: eim-petstore
+    ports:
+     - "80:8080"
+    depends_on:
+     - postgres-db
+    environment:
+     - spring.datasource.url=jdbc:postgresql://pgres-db:5432/eagle_eye_local
+    volumes:
+      - "/Users/enirtium/dkr-volumes/:/tmp"
+      - "/Users/enirtium/dkr-volumes/:/logs"
+  
+  postgres-db:
+    image: postgres:9.5
+    container_name: pgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "p0stgr@s"
+      POSTGRES_DB:       "eagle_eye_local"
+    volumes:
+      - ./src/main/resources/db/postgres/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./src/main/resources/db/postgres/data.sql:/docker-entrypoint-initdb.d/2-data.sql

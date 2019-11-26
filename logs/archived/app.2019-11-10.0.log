@@ -1,0 +1,21 @@
+2019-11-10 07:25:02,825 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Starting EimPetclinicApplicationTests on macbook-pro.lan with PID 39397 (started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-10 07:25:02,830 DEBUG com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-10 07:25:02,831 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] No active profile set, falling back to default profiles: default
+2019-11-10 07:25:04,711 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-10 07:25:06,327 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-10 07:25:08,123 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Started EimPetclinicApplicationTests in 5.603 seconds (JVM running for 6.895)
+2019-11-10 10:02:44,197 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Starting EimPetclinicApplicationTests on macbook-pro.lan with PID 41301 (started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-10 10:02:44,233 DEBUG com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-10 10:02:44,234 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] No active profile set, falling back to default profiles: default
+2019-11-10 10:02:46,156 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-10 10:02:47,787 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-10 10:02:49,553 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Started EimPetclinicApplicationTests in 5.633 seconds (JVM running for 6.901)
+2019-11-10 10:03:09,050 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Starting EimPetclinicApplication v0.0.1-SNAPSHOT on macbook-pro.lan with PID 41321 (/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/eim-petclinic-0.0.1-SNAPSHOT.jar started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-10 10:03:09,054 DEBUG com.eim.eimpetclinic.EimPetclinicApplication [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-10 10:03:09,054 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] No active profile set, falling back to default profiles: default
+2019-11-10 10:03:11,395 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-10 10:03:12,843 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-10 10:03:13,698 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Started EimPetclinicApplication in 5.554 seconds (JVM running for 6.206)
+2019-11-10 10:03:46,906 INFO com.eim.eimpetclinic.vet.VeterinaryController [http-nio-8080-exec-1] In Vet Controller
+2019-11-10 10:03:46,962 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [http-nio-8080-exec-1] Setting JDBC Connection [HikariProxyConnection@642476993 wrapping org.postgresql.jdbc.PgConnection@5a22005] read-only
+2019-11-10 10:03:47,593 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [http-nio-8080-exec-1] Resetting read-only flag of JDBC Connection [HikariProxyConnection@642476993 wrapping org.postgresql.jdbc.PgConnection@5a22005]

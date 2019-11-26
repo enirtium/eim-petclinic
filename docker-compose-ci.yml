@@ -1,0 +1,45 @@
+version: "2"
+
+services:
+   # gitlab:
+   #  restart: always
+   #  image: gitlab/gitlab-ce:latest
+   #  ports:
+   #  - "443:443"
+   #  - "10080:80"
+   #  - "10022:22"
+   #  # volumes:
+   #  # - :/etc/gitlab
+   #  # - :/var/log/gitlab 
+   #  # - :/var/opt/gitlab
+   #  environment:
+   #  - DEBUG=false
+   postgres-db:
+    image: postgres:9.5
+    container_name: pgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "p0stgr@s"
+      POSTGRES_DB:       "eagle_eye_local"
+    volumes:
+      - ./src/main/resources/db/postgres/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./src/main/resources/db/postgres/data.sql:/docker-entrypoint-initdb.d/2-data.sql
+   
+   jenkins:
+    image: jenkinsci/blueocean
+    container_name: jenkins
+    user: root
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /Users/enirtium:/home 
+    environment:
+      JENKINS_HOST_HOME: "/Users/enirtium"
+    ports:
+      - "8080:8080"
+      # - "5000:5000"
+      # - "50000:50000"
+
+
+

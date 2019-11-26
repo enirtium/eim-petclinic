@@ -1,0 +1,194 @@
+2019-11-07 08:48:54,289 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Starting EimPetclinicApplicationTests on macbook-pro.lan with PID 99980 (started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:48:54,294 DEBUG com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:48:54,294 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:48:56,035 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:48:56,404 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:48:56,405 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:48:56,411 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:48:56,425 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:48:56,430 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:48:56,430 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 25 ms.
+2019-11-07 08:48:56,432 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:48:56,432 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:48:56,432 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:48:56,435 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:48:56,436 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:48:56,438 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:48:56,439 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:48:56,440 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:48:56,440 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:48:56,440 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 8 ms.
+2019-11-07 08:48:56,528 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:48:58,048 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:48:59,904 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Started EimPetclinicApplicationTests in 5.923 seconds (JVM running for 7.374)
+2019-11-07 08:49:00,157 INFO com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] Starting VeterinaryControllerTest on macbook-pro.lan with PID 99980 (started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:49:00,158 DEBUG com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:49:00,158 INFO com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:49:00,636 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:00,637 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:00,638 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:49:00,639 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:49:00,640 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:49:00,640 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:49:00,640 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 2 ms.
+2019-11-07 08:49:00,641 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:00,641 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:00,641 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:49:00,642 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:49:00,643 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:49:00,643 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:49:00,644 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:49:00,644 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:49:00,645 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:49:00,645 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 4 ms.
+2019-11-07 08:49:00,670 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:00,713 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:01,542 INFO com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] Started VeterinaryControllerTest in 1.43 seconds (JVM running for 9.012)
+2019-11-07 08:49:01,602 INFO com.eim.eimpetclinic.vet.VeterinaryController [main] In Vet Controller
+2019-11-07 08:49:01,686 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Setting JDBC Connection [HikariProxyConnection@2008165125 wrapping conn10: url=jdbc:h2:mem:testdb user=SA] read-only
+2019-11-07 08:49:01,990 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Setting JDBC Connection [HikariProxyConnection@766302874 wrapping conn0: url=jdbc:h2:mem:testdb user=SA] read-only
+2019-11-07 08:49:02,128 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table vets if exists
+2019-11-07 08:49:10,738 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Starting EimPetclinicApplication on macbook-pro.lan with PID 102 (/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:49:10,740 DEBUG com.eim.eimpetclinic.EimPetclinicApplication [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:49:10,741 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:49:12,772 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:12,988 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:12,989 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:49:12,994 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:49:13,005 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:49:13,008 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:49:13,008 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 19 ms.
+2019-11-07 08:49:13,008 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:13,008 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:13,008 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:49:13,010 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:49:13,011 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:49:13,012 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:49:13,012 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:49:13,013 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:49:13,013 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:49:13,013 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 4 ms.
+2019-11-07 08:49:13,180 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:14,309 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:49:15,307 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Started EimPetclinicApplication in 5.322 seconds (JVM running for 5.843)
+2019-11-07 08:50:38,081 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Starting EimPetclinicApplication on macbook-pro.lan with PID 154 (/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:50:38,084 DEBUG com.eim.eimpetclinic.EimPetclinicApplication [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:50:38,085 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:50:40,162 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:50:40,401 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:50:40,402 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:50:40,409 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:50:40,422 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:50:40,426 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:50:40,427 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 25 ms.
+2019-11-07 08:50:40,427 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:50:40,428 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:50:40,428 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:50:40,430 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:50:40,432 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:50:40,433 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:50:40,434 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:50:40,435 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:50:40,436 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:50:40,436 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 8 ms.
+2019-11-07 08:50:40,612 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:50:41,756 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:50:42,826 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Started EimPetclinicApplication in 5.117 seconds (JVM running for 5.628)
+2019-11-07 08:51:23,371 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Starting EimPetclinicApplicationTests on macbook-pro.lan with PID 177 (started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:51:23,373 DEBUG com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:51:23,375 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:51:24,951 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:25,290 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:25,291 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:51:25,296 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:51:25,310 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:51:25,314 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:51:25,314 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 23 ms.
+2019-11-07 08:51:25,316 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:25,317 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:25,317 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:51:25,319 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:51:25,321 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:51:25,322 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:51:25,323 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:51:25,324 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:51:25,324 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:51:25,324 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 7 ms.
+2019-11-07 08:51:25,415 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:26,592 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:28,366 INFO com.eim.eimpetclinic.EimPetclinicApplicationTests [main] Started EimPetclinicApplicationTests in 5.294 seconds (JVM running for 6.462)
+2019-11-07 08:51:28,587 INFO com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] Starting VeterinaryControllerTest on macbook-pro.lan with PID 177 (started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:51:28,587 DEBUG com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:51:28,588 INFO com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:51:29,023 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:29,025 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:29,025 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:51:29,027 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:51:29,029 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:51:29,029 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:51:29,030 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 4 ms.
+2019-11-07 08:51:29,030 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:29,031 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:29,031 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:51:29,032 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:51:29,033 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:51:29,034 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:51:29,034 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:51:29,035 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:51:29,036 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:51:29,036 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 5 ms.
+2019-11-07 08:51:29,060 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:29,105 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:29,962 INFO com.eim.eimpetclinic.vet.VeterinaryControllerTest [main] Started VeterinaryControllerTest in 1.409 seconds (JVM running for 8.058)
+2019-11-07 08:51:30,009 INFO com.eim.eimpetclinic.vet.VeterinaryController [main] In Vet Controller
+2019-11-07 08:51:30,078 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Setting JDBC Connection [HikariProxyConnection@1205133962 wrapping conn10: url=jdbc:h2:mem:testdb user=SA] read-only
+2019-11-07 08:51:30,345 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Setting JDBC Connection [HikariProxyConnection@1943587031 wrapping conn0: url=jdbc:h2:mem:testdb user=SA] read-only
+2019-11-07 08:51:30,484 ERROR org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000478: Unsuccessful: drop table vets if exists
+2019-11-07 08:51:38,121 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Starting EimPetclinicApplication on macbook-pro.lan with PID 193 (/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:51:38,123 DEBUG com.eim.eimpetclinic.EimPetclinicApplication [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:51:38,124 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:51:40,105 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:40,346 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:40,347 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:51:40,354 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:51:40,366 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:51:40,371 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:51:40,371 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 24 ms.
+2019-11-07 08:51:40,372 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:40,372 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:40,372 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:51:40,374 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:51:40,375 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:51:40,376 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:51:40,377 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:51:40,378 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:51:40,378 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:51:40,379 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 7 ms.
+2019-11-07 08:51:40,572 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:41,642 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:51:42,648 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Started EimPetclinicApplication in 5.274 seconds (JVM running for 5.778)
+2019-11-07 08:58:53,736 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Starting EimPetclinicApplication on macbook-pro.lan with PID 469 (/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes started by enirtium in /Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic)
+2019-11-07 08:58:53,739 DEBUG com.eim.eimpetclinic.EimPetclinicApplication [main] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-07 08:58:53,740 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] No active profile set, falling back to default profiles: default
+2019-11-07 08:58:56,049 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:58:56,334 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:58:56,335 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql]
+2019-11-07 08:58:56,342 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: DROP TABLE vets IF EXISTS
+2019-11-07 08:58:56,356 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE TABLE vets ( id INTEGER IDENTITY PRIMARY KEY, first_name VARCHAR(30), last_name VARCHAR(30) )
+2019-11-07 08:58:56,361 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 0 returned as update count for SQL: CREATE INDEX vets_last_name ON vets (last_name)
+2019-11-07 08:58:56,361 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/schema.sql] in 26 ms.
+2019-11-07 08:58:56,362 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:58:56,362 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:58:56,362 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executing SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql]
+2019-11-07 08:58:56,364 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (1, 'James', 'Carter')
+2019-11-07 08:58:56,365 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (2, 'Helen', 'Leary')
+2019-11-07 08:58:56,366 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets(id,first_name,last_name) VALUES (3, 'Linda', 'Douglas')
+2019-11-07 08:58:56,366 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (4, 'Rafael', 'Ortega')
+2019-11-07 08:58:56,367 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (5, 'Henry', 'Stevens')
+2019-11-07 08:58:56,368 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] 1 returned as update count for SQL: INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins')
+2019-11-07 08:58:56,368 DEBUG org.springframework.jdbc.datasource.init.ScriptUtils [main] Executed SQL script from URL [file:/Users/enirtium/dosu/eclipse-ide/eim-m3/eim-petclinic/target/classes/db/h2/data.sql] in 6 ms.
+2019-11-07 08:58:56,554 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:58:58,022 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [main] Fetching JDBC Connection from DataSource
+2019-11-07 08:58:59,119 INFO com.eim.eimpetclinic.EimPetclinicApplication [main] Started EimPetclinicApplication in 5.819 seconds (JVM running for 6.5)
+2019-11-07 08:59:08,362 INFO com.eim.eimpetclinic.vet.VeterinaryController [http-nio-8080-exec-1] In Vet Controller
+2019-11-07 08:59:08,439 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [http-nio-8080-exec-1] Setting JDBC Connection [HikariProxyConnection@1595488425 wrapping conn0: url=jdbc:h2:mem:testdb user=SA] read-only
